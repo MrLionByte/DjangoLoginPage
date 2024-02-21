@@ -41,6 +41,6 @@ def perform_logout(request):
         return redirect("indexLogin")
     
 def page(request):
-    return render(request,"page.html",{"name":"Farhan Mahmood N"})
+    return render(request,"page.html")
 
 ###########
