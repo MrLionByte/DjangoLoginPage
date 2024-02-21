@@ -1,0 +1,12 @@
+body {
+ background-image:url(img/background-2426328_1920.jpg);
+ background-size: 100%;
+}
+.navbar{
+    background-color:darkgray ;
+}
+.Form_Box{
+    width: 25rem; 
+    background-image: url(img/computer-8037838_1920.png);
+    opacity: 1;
+}

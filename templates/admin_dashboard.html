@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'admin-style.css' %}">
+  
+  </head>
+
+  <body class="body-home">
+    {% block content %}
+    <nav>
+    <h1 class="text-center text-white">Welcome to <b>World of IOT</b></h1>
+  </nav>
+
+    <section>
+      <!-- Container with webpage content -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body bg-secondary">
+                <h5 class="card-title text-center"><b>World of IOT</b></h5>
+                <p class="card-text text-white">Welcome to the World of IoT – an immersive online experience designed to unravel the extraordinary realm of the 
+                  Internet of Things (IoT). In this dynamic web page, we invite you to explore the interconnected landscape of smart devices, sensors, 
+                  and cutting-edge technology that is revolutionizing the way we live, work, and interact with the world. Delve into the endless possibilities 
+                  of IoT, where everyday objects transform into intelligent entities, exchanging information seamlessly to enhance efficiency, convenience, 
+                  and sustainability. From smart homes and cities to industrial automation and healthcare innovations, witness firsthand how IoT 
+                  is reshaping our future. Join us on this enlightening journey to discover the transformative impact of IoT on our interconnected world. 
+                  Embrace the era of innovation, connectivity, and limitless potential – welcome to the fascinating World of IoT!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body bg-secondary">
+                <h5 class="card-title text-center"><b>IOT Future</b></h5>
+                <p class="card-text text-white" style="background-image: url(img/industry-2630304_1920.png);">The future of the Internet of Things (IoT) promises a revolutionary paradigm shift, intertwining the digital and physical realms to create a seamlessly connected world. 
+                  As we embark on this transformative journey, IoT is poised to redefine the way we perceive and interact with our surroundings.<br>
+
+                  <br>In the coming years, IoT will play a pivotal role in shaping smart cities, enhancing efficiency in urban infrastructure, and 
+                  optimizing resource utilization. The integration of IoT into healthcare will bring about a new era of personalized and remote 
+                  patient monitoring, fostering improved healthcare outcomes. Moreover, IoT will continue to revolutionize industries, with smart 
+                  manufacturing processes, predictive maintenance, and supply chain optimization becoming the norm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<main>
+  <!-- div section for logout button -->
+  <div class="container-fluid d-flex justify-content-center">
+        <div class="card m-5" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center">User Settings</h5>
+            <h6 class="card-subtitle mb-2 text-muted text-center">We miss You</h6>
+            <p class="card-text">Feel free to comeback anytime and explore the world of IOT</p>
+            <!-- Logout button in A-tog for logout action -->
+            <a href="{% url 'perform_logout' %}" class="btn btn-warning d-flex justify-content-center">Logout</a>
+          </div>
+        </div>
+      </div>
+      </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    {% endblock content %}
+</body>
+</html>
